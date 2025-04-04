@@ -541,6 +541,6 @@ esp_err_t PsychicRequest::reply(int code, const char *contentType, const char *c
   return response.send();
 }
 
-const std::vector<KeyValue>& PsychicHttpsServer::getParams() const {
+const std::list<PsychicWebParameter*>& PsychicHttpsServer::getParams() const {
     return _params;
 }
