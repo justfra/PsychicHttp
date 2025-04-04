@@ -93,7 +93,7 @@ class PsychicRequest {
     esp_err_t reply(int code);
     esp_err_t reply(const char *content);
     esp_err_t reply(int code, const char *contentType, const char *content);
-    const std::vector<KeyValue>& getParams() const;  // 👈 Add this line
+    const std::list<PsychicWebParameter*>& getParams() const;
 
 };
 
